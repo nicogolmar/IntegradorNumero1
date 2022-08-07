@@ -1,47 +1,36 @@
-const urlRick=`https://rickandmortyapi.com/api/character/${id}`;
-fetch(urlRick)
-  .then((response) => response.json())
-  .then((rick) => showRick(rick));
+const buttons=document.getElementById('buttons');
+const urlRick='https://rickandmortyapi.com/api/character';
+let btnNext;
+let btnPrev;
+let body;
 
+const GetCards=async(url)=>{
+    const response=await fetch(url)
+    const results=await response.json();
+    dataCards(results.results)
 
-function fetchRick(id){
-    fetch(urlRick)
-    .then((response) =>response.json())
-    .then((data)=>{createCharacter(data);
-        })
+    console.log(results)       
 }
 
+GetCards(urlRick);
 
-
-function fetchRicks(number){
-    for(let i=1 ;i<=number;i++)
-    {
-        fetchRick(i);
-    }
+const dataCards= async (data)=>{
+   let body=``;
+    for(let index of data){
+    const resp=await fetch(index.url);
+    const resul= await resp.json();
+    body+=`
+    <div class="container">
+   
+    <div class="card-img"><img  src="${resul.image}"/>
+    <h2 class="cards-name">${resul.name}</h2>
+    </div>
+    </div>
+    
+    
+    `
+      
 }
+    document.getElementById("rick").innerHTML = body;
 
-
-
-function showRick(rick)
-{
-    let body = ``;
-        for(let i = 1 ; i<10;i++){
-            
-        
-  
-    body +=` 
-       
-       <div class="rick">
-       
-          <p><b>Id:</b> ${rick.id}</p>
-          <p><img src="${rick.image}" ></b> </p>
-         
-       
-       </div>
-       
-       `;
-    }
-  document.getElementById("rick").innerHTML = body;
-}
-
-
+ }
