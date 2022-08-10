@@ -7,6 +7,48 @@
     
 }   
 
+body {
+    
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+   
+
+body {
+    
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
 .container{
     display: flex;
     justify-content: flex-start;
@@ -14,7 +56,7 @@
 }
 .form{
 
-    background-color:red;
+    background-color:#db5919;
     height: 50%;
     padding-bottom: 15%;
     padding-left: 7.5%;
@@ -23,12 +65,20 @@
     text-align: center;
     margin-left: 5%;
     text-decoration: none;
-    color: black;
+    color: rgb(238, 233, 233);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+a.form:hover {
+    background-color:#f8915d;
+    color: #2e2d2d;
 
+}
+.primera{
+    color: yellow;
 }
 
 .user{
-    background-color:rgb(38, 255, 0);
+    background-color:#20985e;
     height: 50%;
     padding-bottom: 18%;
     padding-left: 8%;
@@ -36,12 +86,17 @@
     border-radius: 0% 0% 50% 50%;
     margin-left: 5%;
     text-decoration: none;
-    color: black;
+    color: rgb(247, 241, 241);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 
 }
+a.user:hover {
+    background-color:#35cd86;
+    color: #080808;
 
+}
 .cards{   
-    background-color:yellow;
+    background-color:#b5143f;
     height: 50%;
     padding-bottom: 21%;
     padding-left: 8%;
@@ -49,5 +104,47 @@
     border-radius: 0% 0% 50% 50%;
     margin-left: 5%;
     text-decoration: none;
-    color: black;
+    color: rgb(246, 240, 240);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+a.cards:hover {
+    background-color:#df4c73;
+    color: #080808;
+
+
+}
+
+.contenido h1{
+    font-size: 60px;
+    font-weight: 100;
+    margin-top: 24px;
+    margin-bottom: 15px;
+    color: #232d60;
+}
+.contenido p{
+    font-size: 20px;
+    color: #6a7199;
+}
+.contenido h1{
+    font-size: 60px;
+    font-weight: 100;
+    margin-top: 24px;
+    margin-bottom: 15px;
+    color: #232d60;
+}
+.contenido p{
+    font-size: 20px;
+    color: #6a7199;
+}
+.contenido{
+    margin-left: 20%;
+    margin-top: 20%;
+
+}
+.feature-img{
+    height: 40%;
+    width: 30%;
+    position: absolute;
+    bottom:10%;
+    right: 5%;
 }

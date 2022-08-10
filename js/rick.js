@@ -1,7 +1,4 @@
-const buttons=document.getElementById('buttons');
-const urlRick='https://rickandmortyapi.com/api/character';
-let btnNext;
-let btnPrev;
+const urlRick=`https://rickandmortyapi.com/api/character`;
 let body;
 
 const GetCards=async(url)=>{
@@ -9,8 +6,7 @@ const GetCards=async(url)=>{
     const results=await response.json();
     dataCards(results.results)
 
-    console.log(results)       
-}
+   }
 
 GetCards(urlRick);
 
