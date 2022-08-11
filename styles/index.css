@@ -113,6 +113,24 @@ a.cards:hover {
 
 
 }
+h1{
+    position: relative;
+    text-align: center;
+    font-size: 8.8vw;
+    color: #45b1d8;
+    -webkit-text-stroke: 0.2vw #383d52;
+    text-transform: uppercase;  
+}
+
+
+h5{
+    
+    position: relative;
+    text-align: center;
+    font-size: 1.8vw;
+    color:rgb(255, 255, 20);
+      text-transform: uppercase;
+}
 
 .contenido h1{
     font-size: 60px;

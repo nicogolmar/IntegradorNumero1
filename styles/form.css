@@ -12,11 +12,14 @@ body {
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
 }
-
 h1{
-  display: flex;
-  padding-top: 2%;
-  justify-content: center;
+  position: relative;
+  text-align: center;
+  padding:20px;
+  font-size: 4.8vw;
+  color: #45b1d8;
+  -webkit-text-stroke: 0.1vw #383d52;
+  text-transform: uppercase;  
 }
 
 @keyframes gradient {
@@ -34,13 +37,17 @@ h1{
 }
 #form{
   display:flex;
-  width:100%;
+  width:90%;
+  margin-left: 5%;
   height: 70vh;  
   align-items: center;
   justify-content: center; /* con esto deberia alinearse*/
 }
+a p{display: flex;
+margin-bottom: 60%;
+}
 form{
-  width:90%;
+  width:100%;
   max-width: 600px;
 justify-content: center;
 }

@@ -11,18 +11,21 @@ let body = ``;
   for (let i = 0; i < user.length; i++) {
     body += ` 
        
-       <div class="user">
+    <div class="container">
+    <div class="card">
+      <div class="circle">
+         <h2><b>Id:</b> ${user[i].id}</h2>
+      </div> 
+      <div class="content"> 
+         <p><b>Email:</b> ${user[i].email}</p>
+         <p><b>Phone:</b> ${user[i].phone}</p>
+         <p><b>Street:</b> ${user[i].address.street}</p>
+         <p><b>Suite:</b> ${user[i].address.suite}</p>
+         <p><b>Company Name:</b> ${user[i].company.name}</p>
        
-          <p><b>Id:</b> ${user[i].id}</p>
-          <p><b>Email:</b> ${user[i].email}</p>
-          <p><b>Phone:</b> ${user[i].phone}</p>
-          <p><b>Street:</b> ${user[i].address.street}</p>
-          <p><b>Suite:</b> ${user[i].address.suite}</p>
-          <p><b>Company Name:</b> ${user[i].company.name}</p>
-      
-       
-       </div>
-       
+      </div>
+      </div>
+      </div>
        `;
   }
   document.getElementById("users").innerHTML = body;
